@@ -1,0 +1,30 @@
+{
+  "name": "discord-lite",
+  "version": "1.0.0",
+  "description": "A chat moderation bot for Discord",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jndachenhaus/discord-lite.git"
+  },
+  "keywords": [
+    "discord",
+    "lite",
+    "bot"
+  ],
+  "author": "Jacob Dachenhaus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jndachenhaus/discord-lite/issues"
+  },
+  "homepage": "https://github.com/jndachenhaus/discord-lite#readme",
+  "devDependencies": {
+    "electron": "^1.4.4"
+  },
+  "dependencies": {
+    "eris": "^0.4.0"
+  }
+}
