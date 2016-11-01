@@ -1,2 +1,2 @@
 # Discord Lite
-A chat moderation client for Discord
+A lightweight client for Discord
