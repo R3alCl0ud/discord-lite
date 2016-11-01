@@ -1,2 +1,2 @@
 # discord-lite
-A chat moderation bot for Discord
+A chat moderation client for Discord
