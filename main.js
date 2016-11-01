@@ -2,9 +2,8 @@ const {app, BrowserWindow} = require('electron')
 let win
 
 function createWindow () {
-  win = new BrowserWindow({width: 1024, height: 576})
+  win = new BrowserWindow({width: 1024, height: 576, frame: false, resizable: false})
   win.loadURL(`file://${__dirname}/app/index.html`)
-
   win.on('closed', () => {
     win = null
   })

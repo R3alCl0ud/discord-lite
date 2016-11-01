@@ -1,14 +1,23 @@
+#login {
+  background-color: rgb(50,153,187);
+}
+#settings {
+  background-color: rgba(66,66,66,0.75);
+}
+.category-wrapper,
 .guilds-wrapper {
   background-color: rgb(66,66,66);
 }
+.login-wrapper,
 .channels-wrapper,
 .users-wrapper {
   background-color: rgb(188,188,188);
 }
 .channel-info-wrapper {
-  background-color: rgb(188,188,188);
-  border-bottom: 1px solid rgb(0,0,0);
+  background-color: rgb(50,153,187);
 }
+.logo-wrapper,
+.options-wrapper,
 .chat-wrapper {
   background-color: rgb(233,233,233);
 }

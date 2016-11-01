@@ -8,65 +8,35 @@
         <link href="favicon.png" rel="shortcut icon">
         <link href="css/ionicons.min.css" rel="stylesheet">
         <link href="css/default-theme.css" rel="stylesheet">
-        <style>
-          html, body {
-            height: 100%;
-          }
-          #window {
-            width: 1024px;
-            height: 576px;
-          }
-          .flex-vertical,
-          .flex-horizontal {
-            display: block;
-          }
-          .flex-vertical {
-            height: 100%;
-            float: left;
-          }
-          .flex-horizontal {
-            width: 100%;
-          }
-          .guilds-wrapper {
-            width: 64px;
-          }
-          .channels-wrapper,
-          .users-wrapper {
-            width: 192px;
-          }
-          .container {
-            width: 768px;
-          }
-          .channel-info-wrapper,
-          .input-wrapper {
-            height: 64px;
-          }
-          .chat-wrapper {
-            width: 576px;
-          }
-          .content {
-            height: 512px;
-          }
-          .messages-wrapper {
-            height: 448px;
-          }
-        </style>
+        <link href="css/styles.css" rel="stylesheet">
     </head>
 
     <body>
-        <div id="window">
-          <div class="flex-vertical guilds-wrapper"></div>
-          <div class="flex-vertical channels-wrapper"></div>
-          <div class="flex-vertical container">
-            <div class="flex-horizontal channel-info-wrapper"></div>
-            <div class="flex-horizontal content">
-              <div class="flex-vertical chat-wrapper">
-                <div class="flex-horizontal messages-wrapper"></div>
-                <div class="flex-horizontal input-wrapper"></div>
-              </div>
-              <div class="flex-vertical users-wrapper"></div>
+        <div id="login">
+            <div class="container">
+                <div class="layout-vertical logo-wrapper"></div>
+                <div class="layout-vertical login-wrapper"></div>
             </div>
-          </div>
+        </div>
+        <div id="settings">
+            <div class="container">
+                <div class="layout-vertical category-wrapper"></div>
+                <div class="layout-vertical options-wrapper"></div>
+            </div>
+        </div>
+        <div id="app">
+            <div class="layout-vertical guilds-wrapper"></div>
+            <div class="layout-vertical channels-wrapper"></div>
+            <div class="layout-vertical container">
+                <div class="layout-horizontal channel-info-wrapper"></div>
+                <div class="layout-horizontal content">
+                    <div class="layout-vertical chat-wrapper">
+                        <div class="layout-horizontal messages-wrapper"></div>
+                        <div class="layout-horizontal input-wrapper"></div>
+                    </div>
+                    <div class="layout-vertical users-wrapper"></div>
+                </div>
+            </div>
         </div>
     </body>
 

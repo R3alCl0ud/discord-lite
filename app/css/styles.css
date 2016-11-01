@@ -1,0 +1,85 @@
+/* General */
+.layout-vertical {
+    height: 100%;
+    float: left;
+}
+.layout-horizontal {
+    width: 100%;
+}
+/* Tags */
+body {
+    display: flex;
+    margin: 0;
+    width: 1024px;
+    height: 576px;
+}
+/* Classes */
+#login,
+#settings,
+#app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: 576px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#login,
+#settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login {
+  z-index: 2;
+}
+#login .container {
+  width: 480px;
+  height: 288px;
+}
+.logo-wrapper {
+  width: 160px;
+  height: 100%;
+}
+.login-wrapper {
+  width: 320px;
+  height: 100%;
+}
+#settings {
+  z-index: 1;
+}
+#settings .container {
+  width: 480px;
+  height: 384px;
+}
+.category-wrapper {
+  width: 144px;
+}
+.options-wrapper {
+  width: 336px;
+}
+#app .container {
+    width: 768px;
+}
+.guilds-wrapper {
+    width: 64px;
+}
+.channels-wrapper,
+.users-wrapper {
+    width: 192px;
+}
+.channel-info-wrapper,
+.input-wrapper {
+    height: 64px;
+}
+.content {
+    height: 512px;
+}
+.chat-wrapper {
+    width: 576px;
+}
+.messages-wrapper {
+    height: 448px;
+}
