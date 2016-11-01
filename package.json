@@ -1,7 +1,7 @@
 {
   "name": "discord-lite",
   "version": "1.0.0",
-  "description": "A chat moderation bot for Discord",
+  "description": "A lightweight client for Discord",
   "main": "main.js",
   "scripts": {
     "test": "electron ."
