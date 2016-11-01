@@ -7,177 +7,66 @@
         <title>Discord Lite</title>
         <link href="favicon.png" rel="shortcut icon">
         <link href="css/ionicons.min.css" rel="stylesheet">
+        <link href="css/default-theme.css" rel="stylesheet">
         <style>
-            .guild-inner a {
-                display: block;
-                width: 50px;
-                height: 50px;
-                background-position: center;
-                background-size: contain;
-                border-radius: 50px;
-            }
-
+          html, body {
+            height: 100%;
+          }
+          #window {
+            width: 1024px;
+            height: 576px;
+          }
+          .flex-vertical,
+          .flex-horizontal {
+            display: block;
+          }
+          .flex-vertical {
+            height: 100%;
+            float: left;
+          }
+          .flex-horizontal {
+            width: 100%;
+          }
+          .guilds-wrapper {
+            width: 64px;
+          }
+          .channels-wrapper,
+          .users-wrapper {
+            width: 192px;
+          }
+          .container {
+            width: 768px;
+          }
+          .channel-info-wrapper,
+          .input-wrapper {
+            height: 64px;
+          }
+          .chat-wrapper {
+            width: 576px;
+          }
+          .content {
+            height: 512px;
+          }
+          .messages-wrapper {
+            height: 448px;
+          }
         </style>
     </head>
 
     <body>
-        <div id="window" class="theme-dark">
-            <div class="titlebar">
-                <div class="buttons">
-                    <button class="minimize">
-                        <i class="icon ion-android-remove"></i>
-                    </button>
-                    <button class="maximize">
-                        <i class="icon ion-android-expand"></i>
-                    </button>
-                    <button class="close">
-                        <i class="icon ion-android-close"></i>
-                    </button>
-                </div>
+        <div id="window">
+          <div class="flex-vertical guilds-wrapper"></div>
+          <div class="flex-vertical channels-wrapper"></div>
+          <div class="flex-vertical container">
+            <div class="flex-horizontal channel-info-wrapper"></div>
+            <div class="flex-horizontal content">
+              <div class="flex-vertical chat-wrapper">
+                <div class="flex-horizontal messages-wrapper"></div>
+                <div class="flex-horizontal input-wrapper"></div>
+              </div>
+              <div class="flex-vertical users-wrapper"></div>
             </div>
-            <div class="app">
-                <div class="flex-vertical guilds-wrapper">
-                    <div class="scroller-wrap">
-                        <div class="scroller guilds">
-                            <div class="guild">
-                                <div class="guild-inner">
-                                    <a href="#" style="background-image: url(favicon.png)"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="guild-seperator"></div>
-                        <div class="scroller guilds">
-                            <div class="guild">
-                                <div class="guild-inner">
-                                    <a href="#" style="background-image: url(https://cdn.discordapp.com/icons/195923092952842240/78af1ad305dbd9710383eb7a59deded0.jpg)"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-vertical channels-wrapper">
-                    <div class="flex-vertical guild-channels-wrapper">
-                        <div class="guild-header">
-                            <header>
-                                <span>Tactics Gaming Community</span>
-                            </header>
-                        </div>
-                        <div class="scroller-wrap">
-                            <div class="scroller guild-channels">
-                                <header>
-                                    <span>Text Channels</span>
-                                </header>
-                                <div class="channel channel-text">
-                                    <a href="#">
-                                        <span class="channel-name">announcements</span>
-                                    </a>
-                                </div>
-                                <div class="channel channel-text">
-                                    <a href="#">
-                                        <span class="channel-name">staff</span>
-                                    </a>
-                                </div>
-                                <div class="channel channel-text">
-                                    <a href="#">
-                                        <span class="channel-name">general</span>
-                                    </a>
-                                </div>
-                                <div class="channel channel-text">
-                                    <a href="#">
-                                        <span class="channel-name">screenshots</span>
-                                    </a>
-                                </div>
-                                <div class="channel channel-text">
-                                    <a href="#">
-                                        <span class="channel-name">spam</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="account">
-                        <div class="avatar-small"></div>
-                        <div class="account-details">
-                            <span class="username">Invisibru</span>
-                            <span class="discriminator">#7150</span>
-                        </div>
-                        <div class="btn-group">
-                            <button class="btn btn-sync">
-                                <i class="icon ion-android-sync"></i>
-                            </button>
-                            <button class="btn btn-settings">
-                                <i class="icon ion-android-settings"></i>
-                            </button>
-                            <button class="btn btn-logout">
-                                <i class="icon ion-android-exit"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-vertical chat-wrapper">
-                    <div class="flex-horizontal title-wrapper">
-                        <div class="title">
-                            <span class="channel-name">general</span>
-                        </div>
-                        <div class="topic"></div>
-                        <div class="header-toolbar">
-                            <div class="seperator"></div>
-                        </div>
-                    </div>
-                    <div class="flex-horizontal content">
-                        <div class="flex-horizontal messages-wrapper">
-                            <div class="scroller-wrap">
-                                <div class="scroller messages">
-                                    <div class="message-group">
-                                        <div class="avatar-large"></div>
-                                        <div class="comment">
-                                            <div class="message">
-                                                <div class="body">
-                                                    <h2>
-                                                        <span class="username-wrapper">
-                                                            <strong class="user-name">Invisibru</strong>
-                                                        </span>
-                                                    </h2>
-                                                    <div class="message-text">
-                                                        <div class="markup">Random Text</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="channel-members-wrap">
-                            <div class="scroller-wrap">
-                                <div class="scroller channel-members">
-                                    <h2>Leaders - 1</h2>
-                                    <div class="member">
-                                        <div class="avatar-small"></div>
-                                        <div class="member-inner">
-                                            <div class="member-username">
-                                                <span class="member-username-inner">Invisibru</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <form>
-                            <div class="channel-textarea">
-                                <div class="channel-textarea-inner">
-                                    <textarea rows="1" placeholder="Message"></textarea>
-                                    <div class="channel-textarea-emoji">
-                                        <div class="sprite-item">
-                                            <i class="icon ion-android-happy"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
     </body>
 
