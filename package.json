@@ -1,7 +1,7 @@
 {
   "name": "discord-lite",
   "version": "1.0.0",
-  "description": "A lightweight client for Discord",
+  "description": "A text-chat only, light-weight and portable client for Discord.",
   "main": "main.js",
   "scripts": {
     "test": "electron ."
